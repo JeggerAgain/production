@@ -1,0 +1,189 @@
+html {
+    background: linear-gradient(white, grey) no-repeat center center fixed;
+}
+.pageContainer {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar {
+    margin: -8px 0px 0px -8px;
+    padding: 8px 17px 0px 0px;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+}
+
+.fa-laptop {
+    color: white;
+    font-size: 18px;
+    padding: 0px 3px 0px 8px;
+}
+
+.fullname {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+}
+
+.battleshipTitle {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+.about {
+    float: right;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.secondName {
+    font-weight: bold;
+}
+
+.contact {
+    font-size: 18px;
+    color: black;
+    float: right;
+}
+
+.mainSection {
+    width: 103%;
+    height: 100%;
+    margin-left: -8px;
+    padding-left: 35px;
+}
+
+.profileImage {
+    margin: 25px 15px 15px 0;
+}
+
+.description {
+    display: block;
+    margin: 8px 15px 15px 21px;
+    font-size: 14px;
+    color: black;
+    width: 900px;
+    white-space: normal;
+}
+
+.about {
+    text-align: center;
+}
+
+.header {
+    margin: 25px 15px 6px 0;
+    text-decoration: underline;
+}
+
+.title {
+    margin: 4px 0 4px 0;
+}
+
+.dates {
+    margin: 4px 0 4px 0;
+    color: #5d5d5d;
+}
+
+.details {
+    display: inline-block;
+}
+
+.logo {
+    display: inline-block;
+    margin: 4px 0 4px 40px;
+}
+
+.deldig {
+    width: 100px;
+    height: 49px;
+    background-image: url("https://pbs.twimg.com/profile_images/2214419267/DisplayPic-Option2.png");
+    background-size: 125%;
+    background-position: -10px;
+}
+
+.qualTitle {
+    margin-bottom: 4px;
+}
+
+.educationDes {
+/ / margin-left : 10 px;
+}
+
+.battleshipContainer {
+    display: -webkit-box;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.divider {
+    margin: 50px 20px 0px 20px;
+    width: 10px;
+    height: 300px;
+    background-color: black;
+}
+.title {
+    margin-left: 221px;
+    margin-top: 10px;
+}
+.battleshipTable {
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #d3d3d3;
+}
+
+.bsTablecell {
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #ffffff;
+    transition: 1s ease-out;
+}
+
+
+.bsTablecell:hover {
+    border-radius: 75px;
+}
+
+.battleshipInfo {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 10px 0 10px 0;
+}
+
+.battleshipInputs {
+    margin: 0 0 10px 10px;
+}
+
+.userguessInput {
+    width: 90px;
+    margin-left: 5px;
+}
+
+.fireButton {
+    width: 60px;
+    margin: 0 5px 0 5px;
+}
+
+#outputFeed {
+    margin-left: 20px;
+}
+.outcome {
+    float: inherit;
+    font-size: 50px;
+}
