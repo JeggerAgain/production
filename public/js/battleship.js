@@ -8,7 +8,7 @@ var battleship = function (numOfShips) {
         userShipCount = 0,
         pastComputerGuess = [],
 
-    //Ship Object
+        //Ship Object
         ship = function () {
             var shipName,
                 locationCells;
@@ -58,7 +58,7 @@ var battleship = function (numOfShips) {
             }
         },
 
-    //Game Set Up
+        //Game Set Up
         gameSetUp = function (numOfShips) {
             var i, j, shipObject, len, shipSize, enemyNumOfShips, userNumOfShips;
             if (numOfShips > 0) {
@@ -91,7 +91,7 @@ var battleship = function (numOfShips) {
             }
         },
 
-    //returns an array of letter number coordinates for a ship e.g [G2, G3, G4]
+        //returns an array of letter number coordinates for a ship e.g [G2, G3, G4]
         placeShip = function (shipSize, currentShipCount, currentTakeLocations) {
             var gridLength = 7,
                 gridSize = 49,
@@ -142,12 +142,12 @@ var battleship = function (numOfShips) {
             return alphaCells;
         },
 
-    //return random whole number between min and max
+        //return random whole number between min and max
         randomIntFromInterval = function (min, max) {
             return Math.floor(Math.random() * (max - min + 1) + min);
         },
 
-    //Takes in user's guess and prints to screen the result
+        //Takes in user's guess and prints to screen the result
         checkUsersGuess = function (userGuess) {
             if (userGuess && document.getElementById(userGuess.toLowerCase())) {
                 var i,
@@ -168,7 +168,7 @@ var battleship = function (numOfShips) {
                         domElement.style.backgroundColor = "#FF6666";
                         domElement.innerHTML = 'Ship Dead!';
                         shipsList.splice(i, 1);
-                        if(shipsList.length === 0){
+                        if (shipsList.length === 0) {
                             document.getElementById('outcome').innerHTML = 'GAME OVER YOU WIN!';
                         }
                         break;
@@ -184,12 +184,12 @@ var battleship = function (numOfShips) {
             }
         },
 
-        checkComputersGuess = function(computersGuess) {
-            if (computersGuess && document.getElementById(computersGuess.toLowerCase()+'u')) {
+        checkComputersGuess = function (computersGuess) {
+            if (computersGuess && document.getElementById(computersGuess.toLowerCase() + 'u')) {
                 var i,
                     len = userShipsList.length,
                     result = 'Miss',
-                    domElement = document.getElementById(computersGuess.toLowerCase()+'u');
+                    domElement = document.getElementById(computersGuess.toLowerCase() + 'u');
 
                 for (i = 0; i < len; i++) {
                     result = userShipsList[i].checkYourself(computersGuess);
@@ -203,7 +203,7 @@ var battleship = function (numOfShips) {
                         domElement.style.backgroundColor = "#FF6666";
                         domElement.innerHTML = 'Ship Dead!';
                         userShipsList.splice(i, 1);
-                        if(userShipsList.length === 0){
+                        if (userShipsList.length === 0) {
                             document.getElementById('outcome').innerHTML = 'GAME OVER COMPUTER WINS!'
                         }
                         break;
@@ -217,7 +217,7 @@ var battleship = function (numOfShips) {
             }
         },
 
-        placeUserShipsOnGrid = function() {
+        placeUserShipsOnGrid = function () {
             var len = userShipsList.length, i, shipLocation, len2, j;
             for (i = 0; i < len; i++) {
                 debugger
@@ -229,18 +229,18 @@ var battleship = function (numOfShips) {
             }
         },
 
-        fireComputersGuess = function() {
+        fireComputersGuess = function () {
             var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g'],
-                row = randomIntFromInterval(0,6),
-                column = alphabet[randomIntFromInterval(0,6)],
+                row = randomIntFromInterval(0, 6),
+                column = alphabet[randomIntFromInterval(0, 6)],
                 guess = column + row;
-            if(pastComputerGuess.indexOf(guess) === -1) {
+            if (pastComputerGuess.indexOf(guess) === -1) {
                 pastComputerGuess.push(guess);
                 checkComputersGuess(guess);
             } else {
                 fireComputersGuess();
             }
-        }
+        };
 
 
     // Start Game
